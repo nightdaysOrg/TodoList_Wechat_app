@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="title">
+		灵魂画手的待办事项
+	</view>
+	<view class="infoForUser">
+		<view>本小程序,无在线保存,使用本地数据进行储存,</view>
+		<view>因此清空缓存后,笔记可能会消失,请慎重清理!</view>
+    <view>作者逻辑不够强大,时常断线,对于本小程序功能的期望很大,能实现的功能却很基本,无奈!😂</view>
+	</view>
+	<button type="primary" class="enterBtn" bindtap="tapJump">点击进入使用</button>
+</view>

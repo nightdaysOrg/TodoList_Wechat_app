@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/getinfo/getinfo",
+        "pages/todolist/todolist",
+        "pages/todo/todo"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ddd",
+        "navigationBarTitleText": "TodoList",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "darkgray",
+        "selectedColor": "green",
+        "backgroundColor": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "Tips",
+                "iconPath":"icon/tip.png",
+                "selectedIconPath":"icon/tip1.png"
+            },
+            {
+                "pagePath": "pages/getinfo/getinfo",
+                "text": "New",
+                "iconPath": "icon/pen.png",
+                "selectedIconPath": "icon/pen1.png"
+            },
+            {
+                "pagePath": "pages/todolist/todolist",
+                "text": "Todolist",
+                "iconPath": "icon/list.png",
+                "selectedIconPath": "icon/list1.png"
+            },
+            {
+                "pagePath": "pages/todo/todo",
+                "text": "Todo",
+                "iconPath": "icon/detail.png",
+                "selectedIconPath": "icon/detail1.png"
+            }
+            
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 左侧 -->
+    <view class="left-list">
+        <view class="color red" bindtap="toRed">必须</view>
+        <view class="color orange"  bindtap="toOrange">急匆匆</view>
+        <view class="color blue"  bindtap="toBlue">还好</view>
+        <view class="color green"  bindtap="toGreen">记住就行</view>
+    </view>
+     <!-- 右侧 -->
+    <view class="right-list">
+        <view class="list" wx:for="{{colorList}}" style="background:{{changeColor}}">
+            <view class="list-name"> 
+              <view class="number">待办 {{index+1}}:</view> 
+              <view class="title">{{item.title}}</view>
+            </view>
+            <view class="list-date">{{item.tododate}} {{item.todotime}}</view>
+        </view>
+        
+    </view>
+
+</view>

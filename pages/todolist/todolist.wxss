@@ -1,0 +1,64 @@
+/**index.wxss**/
+.container{
+    flex-direction:row;
+}
+.right-list{
+    float:right;
+    width:70vw;
+    height:100vh;
+    overflow:auto;
+}
+.left-list{
+    height:100vh;
+    width:30vw;
+}
+.color{
+    height:15vh;
+    line-height:15vh;
+    margin:8vh 0;
+    text-align: center;
+    background: #abc;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+.red{
+    background:red;
+    opacity:0.5;
+    color:white;
+}
+.orange{
+    background:orange;
+    opacity:0.5;
+    color:white;
+}
+.blue{
+    background:skyblue;
+    opacity:0.5;
+    color:white;
+}
+.green{
+    background:green;
+    opacity:0.5;
+    color:white;
+}
+.right-list>.list{
+  width:57vw;
+  margin:5vh 3vw;
+  padding:1.5vh 3vw;
+  border-radius: 7px;
+  text-align: center;
+  overflow: hidden;
+}
+.list-name .number{
+  font-size:0.8em;
+  text-align: left;
+}
+.list-date{
+  font-size:0.8em;
+  text-align:right;
+}
+.list-name>.title{   
+  font-size:1.2em;
+  margin-top:1vh;
+  margin-bottom:1vh;
+} 

@@ -1,0 +1,16 @@
+/**index.wxss**/
+.title{
+	margin-top:15vh;
+	font-size:1.25em;
+	font-weight:bold;
+}
+.infoForUser{
+	width:80%;
+	margin:0 auto;
+	font-size:16px;
+	margin-top:10vh;
+	text-indent: 2em;
+}
+.enterBtn{
+	margin-top:10vh;
+}

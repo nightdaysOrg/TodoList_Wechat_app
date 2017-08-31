@@ -1,0 +1,57 @@
+<!--pages/getinfo/getinfo.wxml-->
+<view class="container">
+    <form bindsubmit="formSubmit" bindreset="formReset" class="form">
+
+        <!-- input输入框 -->
+        <view class="section">
+            <view class="section__title" style="{{inputTitleStyle}}">请输入标题:</view>
+            <input name="input" type="text" placeholder="请输入todo的标题" class="input" value="{{inputvalue}}" bindblur="getInput"/>
+        </view>
+
+
+        <!-- textarea输入框 -->
+        <view class="section">
+            <view class="section__title" style="{{textareaTitleStyle}}">请输入内容:</view>
+            <textarea placeholder="请输入具体内容..." class="input" value="{{textareavalue}}" bindblur="getTextarea"/>
+        </view>
+        
+
+        <!-- 单选框 -->
+        <view class="section section_gap">
+            <view class="section__title">紧急程度:</view>
+            <radio-group name="radio-group" class="radio-group" bindchange="radioChange">
+                <label><radio value="red"/>红</label>
+                <label><radio value="orange"/>橙</label>
+                <label><radio value="blue"/>蓝</label>
+                <label><radio value="green"/>绿</label>
+            </radio-group>
+        </view>
+
+    <!-- 日期选择 -->
+        <view class="section">
+            <view class="section__title">选择完成日期:</view>
+            <picker mode="date" value="{{date}}" start="2007-01-01" end="2037-01-01" bindchange="bindDateChange">
+                <view class="picker">
+                    <text style="{{pickerStyle1}}">{{pickerInfo1}}</text> {{date}}
+                </view>
+            </picker>
+        </view>
+
+    <!-- 时间选择 -->
+        <view class="section">
+            <view class="section__title">选择完成时间:</view>
+            <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+                <view class="picker">
+                    <text style="{{pickerStyle2}}">{{pickerInfo2}}</text>  {{time}}
+                </view>
+            </picker>
+            </view>
+
+
+        <!-- 按钮区域 -->
+        <view class="btn-area">
+            <button  type="primary" bindtap="submitClick">提交</button>
+            <button formType="reset" type="warn">重置</button>
+        </view>
+    </form>
+</view>
