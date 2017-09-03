@@ -17,9 +17,19 @@ Page({
       })
     })
   },
+  onShow:function(){
+    wx.setNavigationBarTitle({
+      title: '提示信息'
+    })
+  },
   tapJump:function(){
 	  wx.switchTab({
           url: '/pages/getinfo/getinfo',
+      })
+  },
+  tapJump2:function(){
+	  wx.switchTab({
+          url: '/pages/todolist/todolist',
       })
   }
 })

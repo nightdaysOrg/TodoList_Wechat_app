@@ -1,6 +1,7 @@
 /**index.wxss**/
 .container{
     flex-direction:row;
+    height:100vh;
 }
 .right-list{
     float:right;
@@ -62,3 +63,7 @@
   margin-top:1vh;
   margin-bottom:1vh;
 } 
+.right-list>.hasNothing{
+  text-align: center;
+  line-height:100vh;
+}

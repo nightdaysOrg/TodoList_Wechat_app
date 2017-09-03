@@ -1,1 +1,47 @@
 /**index.wxss**/
+.container{
+  height:100vh;
+  overflow: auto
+}
+.todo-head{
+  height:25vh;
+  text-align: center;
+}
+.todo-title{
+  font-size:1.5em;
+  margin-top:5vh;
+  font-weight:bold;
+}
+.todo-date{
+  margin-top:3vh;
+  font-size:0.9em;
+}
+.todo-time{
+  margin-top:3vh;
+  font-size:0.8em;
+}
+.todo-content{
+  margin-top:5vh;
+  font-size:0.9em;
+  width:80vw;
+  padding:0 5vw;
+  height:60vh;
+  line-height:2em;
+  overflow:auto;
+}
+.todo-content>text{
+  font-size:1.3em;
+  font-weight:bold;
+  margin-left:2vw;
+}
+.todo-content>view{
+  text-indent:2em;
+  font-size:1.2em;
+}
+button{
+  margin:0 3vw;
+  margin-bottom:2vh;
+}
+.button-group{
+  display:flex;
+}

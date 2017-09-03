@@ -7,7 +7,7 @@
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#ddd",
+        "navigationBarBackgroundColor": "white",
         "navigationBarTitleText": "TodoList",
         "navigationBarTextStyle": "black"
     },
@@ -33,14 +33,7 @@
                 "text": "Todolist",
                 "iconPath": "icon/list.png",
                 "selectedIconPath": "icon/list1.png"
-            },
-            {
-                "pagePath": "pages/todo/todo",
-                "text": "Todo",
-                "iconPath": "icon/detail.png",
-                "selectedIconPath": "icon/detail1.png"
             }
-            
         ]
     }
 }

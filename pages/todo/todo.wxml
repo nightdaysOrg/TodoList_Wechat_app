@@ -1,4 +1,19 @@
 <!--index.wxml-->
-<view class="container">
-	<view class="classname">todo</view>
+<view class="container" style="background:{{bgColor}}">
+    <view class="todo-head">
+      <view class="todo-title">{{thePageInfo.title}}</view>
+      <view class="todo-date">截止日期 : {{thePageInfo.tododate}}</view>
+      <view class="todo-time">截止时间 : {{thePageInfo.todotime}}</view>
+    </view>
+    <view class="todo-content">
+      <text>详情 : </text>
+      <view> 
+        {{thePageInfo.content}}
+      </view>
+    </view>
+    <view class="button-group">
+      <button type="warn" bindtap="completeClick">点击完成</button>
+      <button type="primary" bindtap="backClick">返回List</button>
+    </view>
+
 </view>

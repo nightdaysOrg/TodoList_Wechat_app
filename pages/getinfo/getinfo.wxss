@@ -18,17 +18,21 @@
     text-align: center;
 }
 .input{
+    margin-top:1.5vh;
     border:1px solid rgba(0,0,0,0.3);
     border-radius: 7px;
     padding:7px;
     font-size: 0.9em;
+    overflow: auto;
 }
 .radio-group{
+    margin-top:1.5vh;
     display: flex;
     justify-content: space-between;
     margin-right:5vw;
 }
 .picker{
+    margin-top:1.5vh;
     text-align: center;
     font-size:0.9em;
 }

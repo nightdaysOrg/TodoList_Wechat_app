@@ -1,16 +1,21 @@
 /**index.wxss**/
 .title{
-	margin-top:15vh;
-	font-size:1.25em;
+	margin-top:7vh;
+	font-size:1.3em;
 	font-weight:bold;
 }
 .infoForUser{
-	width:80%;
+	width:77%;
 	margin:0 auto;
 	font-size:16px;
-	margin-top:10vh;
+	margin-top:7vh;
 	text-indent: 2em;
+  line-height:2em;
+}
+.button-group{
+  display:flex;
+	margin-top:10vh;
 }
 .enterBtn{
-	margin-top:10vh;
+  margin:0 5vw;
 }

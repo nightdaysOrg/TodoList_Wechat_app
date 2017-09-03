@@ -2,10 +2,10 @@
 <view class="container">
     <!-- 左侧 -->
     <view class="left-list">
-        <view class="color red" bindtap="toRed">必须 : {{red.length}}项</view>
-        <view class="color orange"  bindtap="toOrange">稍急 : {{orange.length}}项</view>
-        <view class="color blue"  bindtap="toBlue">记住 : {{blue.length}}项</view>
-        <view class="color green"  bindtap="toGreen">别忘 : {{green.length}}项</view>
+        <view class="color red" bindtap="toRed">必须</view>
+        <view class="color orange"  bindtap="toOrange">急匆匆</view>
+        <view class="color blue"  bindtap="toBlue">还好</view>
+        <view class="color green"  bindtap="toGreen">记住就行</view>
     </view>
      <!-- 右侧 -->
     <view class="right-list">
@@ -16,9 +16,7 @@
             </view>
             <view class="list-date">{{item.tododate}} {{item.todotime}}</view>
         </view>
-        <view class="hasNothing" wx:if="{{colorList.length==0}}">
-            该分类没有Todo项目...
-        </view>
+        
     </view>
 
 </view>

@@ -5,7 +5,7 @@
         <!-- input输入框 -->
         <view class="section">
             <view class="section__title" style="{{inputTitleStyle}}">请输入标题:</view>
-            <input name="input" type="text" placeholder="请输入todo的标题" class="input" value="{{inputvalue}}" bindblur="getInput"/>
+            <input name="input" type="text" placeholder="请输入todo的标题" class="input" value="{{inputvalue}}" bindblur="getInput" focus="true"/>
         </view>
 
 
@@ -50,7 +50,7 @@
 
         <!-- 按钮区域 -->
         <view class="btn-area">
-            <button  type="primary" bindtap="submitClick">提交</button>
+            <button  type="primary" bindtap="submitClick" disabled="{{date==''||time==''||inputvalue==''||textareavalue==''||TodoColor==''}}">提交</button>
             <button formType="reset" type="warn">重置</button>
         </view>
     </form>
